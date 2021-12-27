@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Times New Roman", Times, serif;
 }
 
 h1,
@@ -28,8 +28,8 @@ imgGallery {
 .contenedor {
     width: 90%;
     max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+    margin:auto;
+    justify-content: center;
 }
 
 
@@ -50,7 +50,7 @@ h1 {
 /* Header */
 header::before {
     content: "";
-    display: block;
+    display: inline-block;
     margin-bottom: 80px;
 }
 
@@ -151,16 +151,16 @@ nav {
     margin: 28px 0 0 0;
     width: 130px;
     display: inline-block;
-    background: #1FDE82;
+    background: #ba1e68;
     text-align: center;
-    color: #fff;
+    color: #fcfbfe;
     padding: 12px 0;
     text-decoration: none;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 14px;
     border-radius: 5px;
-    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+    box-shadow: 0 8px 32px rgba(222, 31, 197, 0.46);
 }
 
 .titulo {
@@ -170,9 +170,16 @@ nav {
 /* About us */
 
 .about-us {
-    background: #f2f2f2;
+    background: #7649fe;
 }
 
+.about-usText p {
+    font-size: 50px;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 14px;
+    color: #fff;
+}
 .contenedor-articulo {
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +189,7 @@ nav {
 
 .articulo {
     width: 29%;
-    background: #fff;
+    background: #0c164f;
     margin-bottom: 30px;
     border-radius: 10px;
     padding: 45px 30px 60px 30px;
@@ -195,31 +202,32 @@ nav {
 
 .articulo>i {
     font-size: 30px;
-    color: #fff;
-    background: #1FDE82;
+    color: #0c164f;
+    background: #ba1e68;
     display: inline-block;
     width: 70px;
     height: 70px;
     text-align: center;
     padding-top: 20px;
     border-radius: 50%;
-    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+    box-shadow: #2d2d2d;
 }
 
 .articulo>h3 {
     font-size: 24px;
     margin-top: 30px;
+    color:#fff;
 }
 
 .articulo>p {
     font-weight: 100;
-    color: #5D6678;
+    color: #fff;
     margin-top: 15px;
     padding-bottom: 20px;
 }
 
 .articulo>a {
-    color: #5D6678;
+    color: #fff;
     font-weight: 400;
     text-decoration: none;
 }
@@ -233,9 +241,10 @@ nav {
 
 
 .questions {
+    background-color: #5643fd;
     height: 600px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
 }
 
@@ -248,9 +257,11 @@ nav {
 }
 
 .textos-questions p {
-    font-weight: 100;
+    font-size: 50px;
+    align-items: center;
+    font-weight: 700;
     margin-top: 14px;
-    color: #5D6678;
+    color: #fcfbfe;
 }
 
 
@@ -269,11 +280,46 @@ nav {
     border-radius: 5px;
     box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
 }
+/* BOT */
+.bot {
+    background: #2c2f33;
+    padding-top: 30px;
+}
+.conten-bot {
+    display: flex;
+    justify-content: space-evenly;
+}
+.bot-text {
+    width: 37%;
+}
+
+.bot-text h4 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.bot-text p {
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+
+.bot-text>a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
 
 /* Results */
 
 .results {
-    background: #2570ff;
+    background: #ba1e68;
     padding-top: 30px;
 }
 
@@ -289,13 +335,29 @@ nav {
     justify-content: space-evenly;
 }
 
+.numbers a {
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #5643fd;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: #5643fd;
+}
+
 .numbers .number {
-    width: 49%;
+    width: 45%;
     background: rgba(255, 255, 255, .2);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 40px 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .numbers .number h4 {
@@ -321,6 +383,7 @@ nav {
 
 .results-text p {
     color: #fff;
+    font-size: 20px;
     font-weight: 300;
     margin: 20px 0;
 }
@@ -340,8 +403,13 @@ nav {
 /* Services */
 
 .services {
+    padding-top: 30px;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    background-color: #0c164f;
 }
 
 .services>img {
@@ -369,7 +437,7 @@ nav {
 /* footer */
 
 footer {
-    background: #f2f2f2;
+    background: #1d1135;
     padding: 60px 0;
     overflow: hidden;
     display: flex;
@@ -384,7 +452,7 @@ footer {
 }
 
 .partFooter h4 {
-    color: #1d273b;
+    color: #fff;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -393,7 +461,7 @@ footer {
 .partFooter a {
     display: block;
     text-decoration: none;
-    color: #5D6678;
+    color: #fff;
     font-weight: 300;
     transition: color .3s ease-in-out;
     margin-bottom: 10px;
@@ -401,7 +469,7 @@ footer {
 
 
 .partFooter a:hover {
-    color: #1FDE82;
+    color: red;
 }
 
 .partFooter img {
@@ -411,8 +479,8 @@ footer {
 .social-media i {
     font-size: 20px;
     display: inline-block;
-    color: #adb6c7;
-    border: 1px solid #adb6c7;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 50%;
     width: 38px;
     height: 38px;
@@ -426,8 +494,8 @@ footer {
 
 .social-media i:hover {
     color: #fff;
-    background-color: #1FDE82;
-    border-color: #1FDE82;
+    background-color: #e62e1b;
+    border-color: #e62e1b;
 }
 
 
@@ -470,6 +538,17 @@ footer {
     .questions>img {
         width: 400px;
     }
+    /* BOT */
+    .conten-bot {
+        flex-direction: column-reverse;
+    }
+    
+    .bot-text>a {
+        margin-bottom: 60px;
+    }
+    .bot-text {
+        width: 100%;
+    }
 
     /* results */
 
@@ -495,6 +574,7 @@ footer {
     .services {
         flex-direction: column-reverse;
         align-items: center;
+        width: 100%;
     }
 
     .box-skills {
@@ -613,5 +693,11 @@ footer {
     .partFooter {
         width: 95%;
         margin-bottom: 40px;
+    }
+
+    /* BOT */
+
+    .bot-text h4 {
+        font-size: 35px;
     }
 }
