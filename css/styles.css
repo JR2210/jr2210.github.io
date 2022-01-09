@@ -404,10 +404,11 @@ nav {
 
 .services {
     padding-top: 30px;
+    padding-bottom: 30px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:center;
     margin: 0;
     background-color: #0c164f;
 }
@@ -422,7 +423,7 @@ nav {
 
 .box-skills h4 {
     font-size: 24px;
-    background: #f2f2f2;
+    background: #fcfbfe;
     width: 350px;
     border-radius: 6px;
     padding: 10px 0 10px 15px;
@@ -430,7 +431,7 @@ nav {
 }
 
 .box-skills i {
-    color: #1FDE82;
+    color: #0c164f;
     font-size: 20px;
 }
 
